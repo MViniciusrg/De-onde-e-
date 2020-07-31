@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde é?</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/fontawesome/all.min.js"></script>
+</head>
+<body>
+    <main>
+
+        <section class="home">
+            <h1>De onde é? <i class="fas fa-map-marked-alt"></i></h1>
+            
+
+        <h2 id="info">
+            Identificando CEPs por todo o Brasil
+        </h2>
+        <form>
+            <div id="procurar">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="number" id="searchBar" placeholder="insira o CEP sem símbolos" size="8" onkeypress="return disableEnterKey(event)">
+        </form>
+        
+        <!-- coming soon......
+            <div id="confere">
+                <p>...</p>
+            </div>
+
+        -->
+        
+        </section>
+
+        <section class="done">
+            <div class="top">
+                <p id="cep_html">00000000</p>
+                
+                <div class="buttons">
+                    
+                    <button id="goBack"><i class="fas fa-chevron-left"></i></button>
+                    
+                    <!-- coming soon....
+
+                         <button id="fav"><i class="fas fa-plus"></i></button>
+                        
+                    -->
+                </div>
+                
+            </div>
+            <div class="bottom">
+                <p id="rua_html">Rua</p>
+                <p id="complemento_html">Complemento</p>
+                <p id="bairro_html">Bairro</p>
+                <p id="cidade_html">Cidade</p>
+                <p id="estado_html">Estado</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcos Vinicius utilizando a API ViaCep</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
